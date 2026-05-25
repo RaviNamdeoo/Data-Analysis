@@ -23,14 +23,17 @@ This project performs end-to-end data analysis on Zomato restaurant data merged 
 - Merged country code data
 - Dropped redundant columns (`Address`, `Locality Verbose`, `Switch to order menu`, etc.)
 - Filled 9 missing cuisine values with `Fast Food` (no dominant pattern found per city)
+  
 **EDA**
 - Geo-distribution using Longitude & Latitude
 - Correlation heatmap of numerical features
 - Univariate analysis: Price range, Aggregate rating, Votes
 - Multivariate analysis: Rating vs Country, Online Delivery vs Table Booking
+  
 **Feature Engineering**
 - Created `Average Individual Cost` from `Average Cost for two`
 - Dropped high cardinality columns (Cuisines, Restaurant Name, Currency, etc.)
+  
 **Model Building**
 - Train/Test split (80/20)
 - Preprocessing pipeline using `ColumnTransformer`:
